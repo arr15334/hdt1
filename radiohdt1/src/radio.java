@@ -6,7 +6,7 @@
 
 /**
  *
- * @author Rodrigo Arriaza;
+ * @author Rodrigo Arriaza, Sebastián Galindo, Alejandro Chaclán;
  */
 public interface radio {
     public double subirEstacion();  
