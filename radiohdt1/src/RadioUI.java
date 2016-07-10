@@ -12,23 +12,23 @@ public class RadioUI extends javax.swing.JFrame {
 
         estacion = new javax.swing.JTextField();
         jSiguiente = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btnanterior = new javax.swing.JButton();
+        btn_estacion1 = new javax.swing.JButton();
+        btn_estacion2 = new javax.swing.JButton();
+        btn_estacion4 = new javax.swing.JButton();
+        btn_estacion3 = new javax.swing.JButton();
         jComboBox2 = new javax.swing.JComboBox();
-        jButton6 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jToggleButton1 = new javax.swing.JToggleButton();
-        jToggleButton2 = new javax.swing.JToggleButton();
+        btnguardar = new javax.swing.JButton();
+        btn_estacion5 = new javax.swing.JButton();
+        btn_estacion6 = new javax.swing.JButton();
+        btn_estacion7 = new javax.swing.JButton();
+        btn_estacion8 = new javax.swing.JButton();
+        btn_estacion9 = new javax.swing.JButton();
+        btn_estacion10 = new javax.swing.JButton();
+        btn_estacion11 = new javax.swing.JButton();
+        btn_estacion12 = new javax.swing.JButton();
+        botonAMFM = new javax.swing.JToggleButton();
+        botonONOFF = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -46,89 +46,94 @@ public class RadioUI extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setText("Anterior");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnanterior.setText("Anterior");
+        btnanterior.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnanteriorActionPerformed(evt);
             }
         });
 
-        jButton1.setText("1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btn_estacion1.setText("1");
+        btn_estacion1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btn_estacion1ActionPerformed(evt);
             }
         });
 
-        jButton3.setText("2");
+        btn_estacion2.setText("2");
 
-        jButton4.setText("4");
+        btn_estacion4.setText("4");
 
-        jButton5.setText("3");
+        btn_estacion3.setText("3");
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
 
-        jButton6.setText("Guardar");
+        btnguardar.setText("Guardar");
 
-        jButton8.setText("5");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        btn_estacion5.setText("5");
+        btn_estacion5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                btn_estacion5ActionPerformed(evt);
             }
         });
 
-        jButton9.setText("6");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
+        btn_estacion6.setText("6");
+        btn_estacion6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+                btn_estacion6ActionPerformed(evt);
             }
         });
 
-        jButton10.setText("7");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        btn_estacion7.setText("7");
+        btn_estacion7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                btn_estacion7ActionPerformed(evt);
             }
         });
 
-        jButton11.setText("8");
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
+        btn_estacion8.setText("8");
+        btn_estacion8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                btn_estacion8ActionPerformed(evt);
             }
         });
 
-        jButton12.setText("9");
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
+        btn_estacion9.setText("9");
+        btn_estacion9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+                btn_estacion9ActionPerformed(evt);
             }
         });
 
-        jButton13.setText("10");
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
+        btn_estacion10.setText("10");
+        btn_estacion10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
+                btn_estacion10ActionPerformed(evt);
             }
         });
 
-        jButton14.setText("11");
-        jButton14.addActionListener(new java.awt.event.ActionListener() {
+        btn_estacion11.setText("11");
+        btn_estacion11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton14ActionPerformed(evt);
+                btn_estacion11ActionPerformed(evt);
             }
         });
 
-        jButton15.setText("12");
-        jButton15.addActionListener(new java.awt.event.ActionListener() {
+        btn_estacion12.setText("12");
+        btn_estacion12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton15ActionPerformed(evt);
+                btn_estacion12ActionPerformed(evt);
             }
         });
 
-        jToggleButton1.setText("AM / FM");
+        botonAMFM.setText("AM / FM");
+        botonAMFM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonAMFMActionPerformed(evt);
+            }
+        });
 
-        jToggleButton2.setText("On/Off");
+        botonONOFF.setText("On/Off");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -140,45 +145,45 @@ public class RadioUI extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btn_estacion5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btn_estacion6, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btn_estacion7, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(btn_estacion8, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btn_estacion9, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btn_estacion10, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton14)
+                                .addComponent(btn_estacion11)
                                 .addGap(10, 10, 10)
-                                .addComponent(jButton15))
+                                .addComponent(btn_estacion12))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(35, 35, 35)
-                                .addComponent(jToggleButton1)))
+                                .addComponent(botonAMFM)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton6)
+                            .addComponent(btnguardar)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnanterior, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jSiguiente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(estacion))
                             .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(55, 55, 55))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btn_estacion1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btn_estacion2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btn_estacion3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btn_estacion4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(layout.createSequentialGroup()
                 .addGap(122, 122, 122)
-                .addComponent(jToggleButton2)
+                .addComponent(botonONOFF)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -187,7 +192,7 @@ public class RadioUI extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(36, 36, 36)
-                        .addComponent(jToggleButton1)
+                        .addComponent(botonAMFM)
                         .addGap(1, 1, 1))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addContainerGap()
@@ -195,29 +200,29 @@ public class RadioUI extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
                 .addComponent(estacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton2)
+                .addComponent(btnanterior)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton4)
-                    .addComponent(jButton5)
-                    .addComponent(jButton3))
+                    .addComponent(btn_estacion1)
+                    .addComponent(btn_estacion4)
+                    .addComponent(btn_estacion3)
+                    .addComponent(btn_estacion2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton8)
-                    .addComponent(jButton9)
-                    .addComponent(jButton10)
-                    .addComponent(jButton11))
+                    .addComponent(btn_estacion5)
+                    .addComponent(btn_estacion6)
+                    .addComponent(btn_estacion7)
+                    .addComponent(btn_estacion8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton6)
-                    .addComponent(jButton12)
-                    .addComponent(jButton13)
-                    .addComponent(jButton14)
-                    .addComponent(jButton15))
+                    .addComponent(btnguardar)
+                    .addComponent(btn_estacion9)
+                    .addComponent(btn_estacion10)
+                    .addComponent(btn_estacion11)
+                    .addComponent(btn_estacion12))
                 .addGap(18, 18, 18)
-                .addComponent(jToggleButton2)
+                .addComponent(botonONOFF)
                 .addContainerGap(37, Short.MAX_VALUE))
         );
 
@@ -232,45 +237,49 @@ public class RadioUI extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jSiguienteActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnanteriorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnanteriorActionPerformed
         ;// TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnanteriorActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btn_estacion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_estacion1ActionPerformed
                     // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btn_estacion1ActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void btn_estacion5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_estacion5ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_btn_estacion5ActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void btn_estacion6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_estacion6ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
+    }//GEN-LAST:event_btn_estacion6ActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void btn_estacion7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_estacion7ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_btn_estacion7ActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    private void btn_estacion8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_estacion8ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11ActionPerformed
+    }//GEN-LAST:event_btn_estacion8ActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    private void btn_estacion9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_estacion9ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
+    }//GEN-LAST:event_btn_estacion9ActionPerformed
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+    private void btn_estacion10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_estacion10ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton13ActionPerformed
+    }//GEN-LAST:event_btn_estacion10ActionPerformed
 
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+    private void btn_estacion11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_estacion11ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton14ActionPerformed
+    }//GEN-LAST:event_btn_estacion11ActionPerformed
 
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+    private void btn_estacion12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_estacion12ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton15ActionPerformed
+    }//GEN-LAST:event_btn_estacion12ActionPerformed
+
+    private void botonAMFMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonAMFMActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botonAMFMActionPerformed
 
     /**
      * @param args the command line arguments
@@ -308,24 +317,24 @@ public class RadioUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JToggleButton botonAMFM;
+    private javax.swing.JToggleButton botonONOFF;
+    private javax.swing.JButton btn_estacion1;
+    private javax.swing.JButton btn_estacion10;
+    private javax.swing.JButton btn_estacion11;
+    private javax.swing.JButton btn_estacion12;
+    private javax.swing.JButton btn_estacion2;
+    private javax.swing.JButton btn_estacion3;
+    private javax.swing.JButton btn_estacion4;
+    private javax.swing.JButton btn_estacion5;
+    private javax.swing.JButton btn_estacion6;
+    private javax.swing.JButton btn_estacion7;
+    private javax.swing.JButton btn_estacion8;
+    private javax.swing.JButton btn_estacion9;
+    private javax.swing.JButton btnanterior;
+    private javax.swing.JButton btnguardar;
     private javax.swing.JTextField estacion;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JComboBox jComboBox2;
     private javax.swing.JButton jSiguiente;
-    private javax.swing.JToggleButton jToggleButton1;
-    private javax.swing.JToggleButton jToggleButton2;
     // End of variables declaration//GEN-END:variables
 }

@@ -4,68 +4,87 @@
 
 /**
  *
- * @author Rodrigo Arriaza;
+ * @author Rodrigo Arriaza, Alejandro Chaclan, Sebastian Galindo
  */
 public class usoRadio implements radio {
     /* atributos */
-    private double estacion;
+    private double emisora;
     private boolean frecuencia;
     private boolean encendido;
+    private double[] emisorasAM = new double[10];
+    private double[] emisorasFM = new double[10];
 
-    /* metodos set y get */
-    public double getEstacion() {
-        return estacion;
+    public usoRadio() {
+        setFrecuencia(true);
+        setEncendido(true);
+        setEmisora(87.9);
+        for (int i = 0; i < 10; i++) {
+            emisorasFM[i] = 87.9;
+            emisorasAM[i] = 530;
+        }
     }
 
-    public void setEstacion(double estacion) {
-        this.estacion = estacion;
-    }
-
-    public boolean isFrecuencia() {
-        return frecuencia;
-    }
-
+    /* metodos para la implementacion de la interfaz */
+    @Override
     public void setFrecuencia(boolean frecuencia) {
         this.frecuencia = frecuencia;
     }
-
-    public boolean isEncendido() {
-        return encendido;
-    }
-
+    
+    @Override
     public void setEncendido(boolean encendido) {
         this.encendido = encendido;
     }
-    
-    /* metodos para la implementacion de la interfaz */
 
     @Override
     public void setEmisora(double emisora) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (getFrecuencia()) {
+            if (Double.compare(emisora, 108.1) == 0) {
+                emisora = 87.9;
+            }
+            if (Double.compare(emisora, 87.7) == 0) {
+                emisora = 107.9;
+            }
+        } else {
+            if (Double.compare(emisora, 1620) == 0) {
+                emisora = 530;
+            }
+            if (Double.compare(emisora, 520) == 0) {
+                emisora = 1610;
+            }
+        }
+        this.emisora = emisora;
     }
 
     @Override
     public void saveEmisora(int btn, double emisora) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (getFrecuencia()){
+            emisorasFM[btn] = emisora;
+        } else {
+            emisorasAM[btn] = emisora;
+        }
     }
 
     @Override
     public double selectEmisora(int btn) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (getFrecuencia()) {
+            return emisorasFM[btn-1];
+        } else {
+            return emisorasAM[btn-1];
+        }
     }
 
     @Override
     public boolean getEncendido() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return encendido;
     }
 
     @Override
     public boolean getFrecuencia() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return frecuencia;
     }
 
     @Override
     public double getEmisora() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return emisora;
     }
 }
