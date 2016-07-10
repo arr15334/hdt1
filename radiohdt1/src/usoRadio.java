@@ -11,14 +11,14 @@ public class usoRadio implements radio {
     private double emisora;
     private boolean frecuencia;
     private boolean encendido;
-    private double[] emisorasAM = new double[10];
-    private double[] emisorasFM = new double[10];
+    private double[] emisorasAM = new double[12];
+    private double[] emisorasFM = new double[12];
 
     public usoRadio() {
         setFrecuencia(true);
         setEncendido(true);
         setEmisora(87.9);
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 12; i++) {
             emisorasFM[i] = 87.9;
             emisorasAM[i] = 530;
         }

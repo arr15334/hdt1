@@ -1,3 +1,8 @@
+/* Clase con el GUI del programa
+
+Autores: Rodrigo Arriaza, Sebastian Galindo, Alejandro Chaclan
+*/
+
 public class RadioUI extends javax.swing.JFrame {
     radio laradio;
     int i;
@@ -5,135 +10,161 @@ public class RadioUI extends javax.swing.JFrame {
         initComponents();
     }
 
-    
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        estacion = new javax.swing.JTextField();
-        jSiguiente = new javax.swing.JButton();
-        btnanterior = new javax.swing.JButton();
-        btn_estacion1 = new javax.swing.JButton();
-        btn_estacion2 = new javax.swing.JButton();
-        btn_estacion4 = new javax.swing.JButton();
-        btn_estacion3 = new javax.swing.JButton();
-        jComboBox2 = new javax.swing.JComboBox();
-        btnguardar = new javax.swing.JButton();
-        btn_estacion5 = new javax.swing.JButton();
-        btn_estacion6 = new javax.swing.JButton();
-        btn_estacion7 = new javax.swing.JButton();
-        btn_estacion8 = new javax.swing.JButton();
-        btn_estacion9 = new javax.swing.JButton();
-        btn_estacion10 = new javax.swing.JButton();
-        btn_estacion11 = new javax.swing.JButton();
-        btn_estacion12 = new javax.swing.JButton();
-        botonAMFM = new javax.swing.JToggleButton();
-        botonONOFF = new javax.swing.JToggleButton();
+        Edit = new javax.swing.JTextField();
+        ButtonSiguiente = new javax.swing.JButton();
+        ButtonAnterior = new javax.swing.JButton();
+        Button1 = new javax.swing.JButton();
+        Button2 = new javax.swing.JButton();
+        Button4 = new javax.swing.JButton();
+        Button3 = new javax.swing.JButton();
+        Combobox1 = new javax.swing.JComboBox();
+        ButtonGuardar = new javax.swing.JButton();
+        Button5 = new javax.swing.JButton();
+        Button6 = new javax.swing.JButton();
+        Button7 = new javax.swing.JButton();
+        Button8 = new javax.swing.JButton();
+        Button9 = new javax.swing.JButton();
+        Button10 = new javax.swing.JButton();
+        Button11 = new javax.swing.JButton();
+        Button12 = new javax.swing.JButton();
+        ToggleAMFM = new javax.swing.JToggleButton();
+        ToggleOnOff = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        estacion.setEditable(false);
-        estacion.addActionListener(new java.awt.event.ActionListener() {
+        Edit.setEditable(false);
+        Edit.setText("87.9");
+        Edit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                estacionActionPerformed(evt);
+                EditActionPerformed(evt);
             }
         });
 
-        jSiguiente.setText("Siguiente");
-        jSiguiente.addActionListener(new java.awt.event.ActionListener() {
+        ButtonSiguiente.setText("Siguiente");
+        ButtonSiguiente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jSiguienteActionPerformed(evt);
+                ButtonSiguienteActionPerformed(evt);
             }
         });
 
-        btnanterior.setText("Anterior");
-        btnanterior.addActionListener(new java.awt.event.ActionListener() {
+        ButtonAnterior.setText("Anterior");
+        ButtonAnterior.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnanteriorActionPerformed(evt);
+                ButtonAnteriorActionPerformed(evt);
             }
         });
 
-        btn_estacion1.setText("1");
-        btn_estacion1.addActionListener(new java.awt.event.ActionListener() {
+        Button1.setText("1");
+        Button1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_estacion1ActionPerformed(evt);
+                Button1ActionPerformed(evt);
             }
         });
 
-        btn_estacion2.setText("2");
-
-        btn_estacion4.setText("4");
-
-        btn_estacion3.setText("3");
-
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
-
-        btnguardar.setText("Guardar");
-
-        btn_estacion5.setText("5");
-        btn_estacion5.addActionListener(new java.awt.event.ActionListener() {
+        Button2.setText("2");
+        Button2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_estacion5ActionPerformed(evt);
+                Button2ActionPerformed(evt);
             }
         });
 
-        btn_estacion6.setText("6");
-        btn_estacion6.addActionListener(new java.awt.event.ActionListener() {
+        Button4.setText("4");
+        Button4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_estacion6ActionPerformed(evt);
+                Button4ActionPerformed(evt);
             }
         });
 
-        btn_estacion7.setText("7");
-        btn_estacion7.addActionListener(new java.awt.event.ActionListener() {
+        Button3.setText("3");
+        Button3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_estacion7ActionPerformed(evt);
+                Button3ActionPerformed(evt);
             }
         });
 
-        btn_estacion8.setText("8");
-        btn_estacion8.addActionListener(new java.awt.event.ActionListener() {
+        Combobox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
+
+        ButtonGuardar.setText("Guardar");
+        ButtonGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_estacion8ActionPerformed(evt);
+                ButtonGuardarActionPerformed(evt);
             }
         });
 
-        btn_estacion9.setText("9");
-        btn_estacion9.addActionListener(new java.awt.event.ActionListener() {
+        Button5.setText("5");
+        Button5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_estacion9ActionPerformed(evt);
+                Button5ActionPerformed(evt);
             }
         });
 
-        btn_estacion10.setText("10");
-        btn_estacion10.addActionListener(new java.awt.event.ActionListener() {
+        Button6.setText("6");
+        Button6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_estacion10ActionPerformed(evt);
+                Button6ActionPerformed(evt);
             }
         });
 
-        btn_estacion11.setText("11");
-        btn_estacion11.addActionListener(new java.awt.event.ActionListener() {
+        Button7.setText("7");
+        Button7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_estacion11ActionPerformed(evt);
+                Button7ActionPerformed(evt);
             }
         });
 
-        btn_estacion12.setText("12");
-        btn_estacion12.addActionListener(new java.awt.event.ActionListener() {
+        Button8.setText("8");
+        Button8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_estacion12ActionPerformed(evt);
+                Button8ActionPerformed(evt);
             }
         });
 
-        botonAMFM.setText("AM / FM");
-        botonAMFM.addActionListener(new java.awt.event.ActionListener() {
+        Button9.setText("9");
+        Button9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonAMFMActionPerformed(evt);
+                Button9ActionPerformed(evt);
             }
         });
 
-        botonONOFF.setText("On/Off");
+        Button10.setText("10");
+        Button10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button10ActionPerformed(evt);
+            }
+        });
+
+        Button11.setText("11");
+        Button11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button11ActionPerformed(evt);
+            }
+        });
+
+        Button12.setText("12");
+        Button12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button12ActionPerformed(evt);
+            }
+        });
+
+        ToggleAMFM.setText("FM");
+        ToggleAMFM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ToggleAMFMActionPerformed(evt);
+            }
+        });
+
+        ToggleOnOff.setText("On/Off");
+        ToggleOnOff.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ToggleOnOffActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -145,141 +176,235 @@ public class RadioUI extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(btn_estacion5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Button5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn_estacion6, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Button6, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn_estacion7, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Button7, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn_estacion8, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(Button8, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(btn_estacion9, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Button9, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn_estacion10, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Button10, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btn_estacion11)
+                                .addComponent(Button11)
                                 .addGap(10, 10, 10)
-                                .addComponent(btn_estacion12))
+                                .addComponent(Button12))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(35, 35, 35)
-                                .addComponent(botonAMFM)))
+                                .addGap(86, 86, 86)
+                                .addComponent(ToggleAMFM)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnguardar)
+                            .addComponent(ButtonGuardar)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(btnanterior, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jSiguiente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(estacion))
-                            .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(ButtonAnterior, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(ButtonSiguiente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(Edit))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(11, 11, 11)
+                                .addComponent(Combobox1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(55, 55, 55))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(btn_estacion1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Button1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btn_estacion2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Button2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
-                        .addComponent(btn_estacion3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Button3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btn_estacion4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Button4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(layout.createSequentialGroup()
                 .addGap(122, 122, 122)
-                .addComponent(botonONOFF)
+                .addComponent(ToggleOnOff)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addComponent(botonAMFM)
-                        .addGap(1, 1, 1))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jSiguiente)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
-                .addComponent(estacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
+                .addComponent(ButtonSiguiente)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Edit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ToggleAMFM))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnanterior)
+                .addComponent(ButtonAnterior)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_estacion1)
-                    .addComponent(btn_estacion4)
-                    .addComponent(btn_estacion3)
-                    .addComponent(btn_estacion2))
+                    .addComponent(Button1)
+                    .addComponent(Button4)
+                    .addComponent(Button3)
+                    .addComponent(Button2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_estacion5)
-                    .addComponent(btn_estacion6)
-                    .addComponent(btn_estacion7)
-                    .addComponent(btn_estacion8))
+                    .addComponent(Combobox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Button5)
+                    .addComponent(Button6)
+                    .addComponent(Button7)
+                    .addComponent(Button8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnguardar)
-                    .addComponent(btn_estacion9)
-                    .addComponent(btn_estacion10)
-                    .addComponent(btn_estacion11)
-                    .addComponent(btn_estacion12))
+                    .addComponent(ButtonGuardar)
+                    .addComponent(Button9)
+                    .addComponent(Button10)
+                    .addComponent(Button11)
+                    .addComponent(Button12))
                 .addGap(18, 18, 18)
-                .addComponent(botonONOFF)
-                .addContainerGap(37, Short.MAX_VALUE))
+                .addComponent(ToggleOnOff)
+                .addContainerGap(35, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void estacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estacionActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_estacionActionPerformed
 
-    private void jSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jSiguienteActionPerformed
-        
-    }//GEN-LAST:event_jSiguienteActionPerformed
+    private void EditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EditActionPerformed
 
-    private void btnanteriorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnanteriorActionPerformed
-        ;// TODO add your handling code here:
-    }//GEN-LAST:event_btnanteriorActionPerformed
+    }//GEN-LAST:event_EditActionPerformed
 
-    private void btn_estacion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_estacion1ActionPerformed
-                    // TODO add your handling code here:
-    }//GEN-LAST:event_btn_estacion1ActionPerformed
+    private void ButtonSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonSiguienteActionPerformed
+        if (radio.getFrecuencia()) {
+            radio.setEmisora(100 *(radio.getEmisora() + 0.2) / 100);
+            Edit.setText(Double.toString(radio.getEmisora()));
+        } else {
+            radio.setEmisora(radio.getEmisora() + 10);
+            Edit.setText(Double.toString(radio.getEmisora()));
+        }
+    }//GEN-LAST:event_ButtonSiguienteActionPerformed
 
-    private void btn_estacion5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_estacion5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_estacion5ActionPerformed
+    private void ButtonAnteriorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonAnteriorActionPerformed
+        if (radio.getFrecuencia()) {
+            radio.setEmisora(100 * (radio.getEmisora() - 0.2) / 100);
+            Edit.setText(Double.toString(radio.getEmisora()));
+        } else {
+            radio.setEmisora(radio.getEmisora() - 10);
+            Edit.setText(Double.toString(radio.getEmisora()));
+        }
+    }//GEN-LAST:event_ButtonAnteriorActionPerformed
 
-    private void btn_estacion6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_estacion6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_estacion6ActionPerformed
+    private void Button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button1ActionPerformed
+        Edit.setText(Double.toString(radio.selectEmisora(1)));
+        radio.setEmisora(radio.selectEmisora(1));
+    }//GEN-LAST:event_Button1ActionPerformed
 
-    private void btn_estacion7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_estacion7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_estacion7ActionPerformed
+    private void Button5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button5ActionPerformed
+        Edit.setText(Double.toString(radio.selectEmisora(5)));
+        radio.setEmisora(radio.selectEmisora(5));
+    }//GEN-LAST:event_Button5ActionPerformed
 
-    private void btn_estacion8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_estacion8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_estacion8ActionPerformed
+    private void Button6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button6ActionPerformed
+        Edit.setText(Double.toString(radio.selectEmisora(6)));
+        radio.setEmisora(radio.selectEmisora(6));
+    }//GEN-LAST:event_Button6ActionPerformed
 
-    private void btn_estacion9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_estacion9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_estacion9ActionPerformed
+    private void Button7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button7ActionPerformed
+        Edit.setText(Double.toString(radio.selectEmisora(7)));
+        radio.setEmisora(radio.selectEmisora(7));
+    }//GEN-LAST:event_Button7ActionPerformed
 
-    private void btn_estacion10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_estacion10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_estacion10ActionPerformed
+    private void Button8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button8ActionPerformed
+        Edit.setText(Double.toString(radio.selectEmisora(8)));
+        radio.setEmisora(radio.selectEmisora(8));
+    }//GEN-LAST:event_Button8ActionPerformed
 
-    private void btn_estacion11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_estacion11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_estacion11ActionPerformed
+    private void Button9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button9ActionPerformed
+        Edit.setText(Double.toString(radio.selectEmisora(9)));
+        radio.setEmisora(radio.selectEmisora(9));
+    }//GEN-LAST:event_Button9ActionPerformed
 
-    private void btn_estacion12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_estacion12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_estacion12ActionPerformed
+    private void Button10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button10ActionPerformed
+        Edit.setText(Double.toString(radio.selectEmisora(10)));
+        radio.setEmisora(radio.selectEmisora(10));
+    }//GEN-LAST:event_Button10ActionPerformed
 
-    private void botonAMFMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonAMFMActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_botonAMFMActionPerformed
+    private void Button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button11ActionPerformed
+        Edit.setText(Double.toString(radio.selectEmisora(11)));
+        radio.setEmisora(radio.selectEmisora(11));
+    }//GEN-LAST:event_Button11ActionPerformed
+
+    private void Button12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button12ActionPerformed
+        Edit.setText(Double.toString(radio.selectEmisora(12)));
+        radio.setEmisora(radio.selectEmisora(12));
+    }//GEN-LAST:event_Button12ActionPerformed
+
+    private void ToggleAMFMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ToggleAMFMActionPerformed
+        if (radio.getFrecuencia()) {
+            ToggleAMFM.setText("AM");
+            radio.setFrecuencia(false);
+            radio.setEmisora(530);
+            Edit.setText("530");
+        } else {
+            ToggleAMFM.setText("FM");
+            radio.setFrecuencia(true);
+            radio.setEmisora(87.9);
+            Edit.setText("87.9");
+        }
+
+    }//GEN-LAST:event_ToggleAMFMActionPerformed
+
+    private void ButtonGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonGuardarActionPerformed
+        radio.saveEmisora(Combobox1.getSelectedIndex(),radio.getEmisora());
+    }//GEN-LAST:event_ButtonGuardarActionPerformed
+
+    private void Button2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button2ActionPerformed
+        Edit.setText(Double.toString(radio.selectEmisora(2)));
+        radio.setEmisora(radio.selectEmisora(2));
+    }//GEN-LAST:event_Button2ActionPerformed
+
+    private void Button3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button3ActionPerformed
+        Edit.setText(Double.toString(radio.selectEmisora(3)));
+        radio.setEmisora(radio.selectEmisora(3));
+    }//GEN-LAST:event_Button3ActionPerformed
+
+    private void Button4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button4ActionPerformed
+        Edit.setText(Double.toString(radio.selectEmisora(4)));
+        radio.setEmisora(radio.selectEmisora(4));
+    }//GEN-LAST:event_Button4ActionPerformed
+
+    private void ToggleOnOffActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ToggleOnOffActionPerformed
+        if (radio.getEncendido()) {
+            Button1.setEnabled(false);
+            Button2.setEnabled(false);
+            Button3.setEnabled(false);
+            Button4.setEnabled(false);
+            Button5.setEnabled(false);
+            Button6.setEnabled(false);
+            Button7.setEnabled(false);
+            Button8.setEnabled(false);
+            Button9.setEnabled(false);
+            Button10.setEnabled(false);
+            Button11.setEnabled(false);
+            Button12.setEnabled(false);
+            ButtonSiguiente.setEnabled(false);
+            ButtonAnterior.setEnabled(false);
+            ButtonGuardar.setEnabled(false);
+            Combobox1.setEnabled(false);
+            Edit.setVisible(false);
+            ToggleAMFM.setEnabled(false);
+            radio.setEncendido(false);
+        } else {
+            Button1.setEnabled(true);
+            Button2.setEnabled(true);
+            Button3.setEnabled(true);
+            Button4.setEnabled(true);
+            Button5.setEnabled(true);
+            Button6.setEnabled(true);
+            Button7.setEnabled(true);
+            Button8.setEnabled(true);
+            Button9.setEnabled(true);
+            Button10.setEnabled(true);
+            Button11.setEnabled(true);
+            Button12.setEnabled(true);
+            ButtonSiguiente.setEnabled(true);
+            ButtonAnterior.setEnabled(true);
+            ButtonGuardar.setEnabled(true);
+            Combobox1.setEnabled(true);
+            Edit.setVisible(true);
+            ToggleAMFM.setEnabled(true);
+            radio.setEncendido(true);
+        }
+    }//GEN-LAST:event_ToggleOnOffActionPerformed
 
     /**
      * @param args the command line arguments
@@ -288,7 +413,7 @@ public class RadioUI extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -316,25 +441,26 @@ public class RadioUI extends javax.swing.JFrame {
         });
     }
 
+    private usoRadio radio = new usoRadio();
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JToggleButton botonAMFM;
-    private javax.swing.JToggleButton botonONOFF;
-    private javax.swing.JButton btn_estacion1;
-    private javax.swing.JButton btn_estacion10;
-    private javax.swing.JButton btn_estacion11;
-    private javax.swing.JButton btn_estacion12;
-    private javax.swing.JButton btn_estacion2;
-    private javax.swing.JButton btn_estacion3;
-    private javax.swing.JButton btn_estacion4;
-    private javax.swing.JButton btn_estacion5;
-    private javax.swing.JButton btn_estacion6;
-    private javax.swing.JButton btn_estacion7;
-    private javax.swing.JButton btn_estacion8;
-    private javax.swing.JButton btn_estacion9;
-    private javax.swing.JButton btnanterior;
-    private javax.swing.JButton btnguardar;
-    private javax.swing.JTextField estacion;
-    private javax.swing.JComboBox jComboBox2;
-    private javax.swing.JButton jSiguiente;
+    private javax.swing.JButton Button1;
+    private javax.swing.JButton Button10;
+    private javax.swing.JButton Button11;
+    private javax.swing.JButton Button12;
+    private javax.swing.JButton Button2;
+    private javax.swing.JButton Button3;
+    private javax.swing.JButton Button4;
+    private javax.swing.JButton Button5;
+    private javax.swing.JButton Button6;
+    private javax.swing.JButton Button7;
+    private javax.swing.JButton Button8;
+    private javax.swing.JButton Button9;
+    private javax.swing.JButton ButtonAnterior;
+    private javax.swing.JButton ButtonGuardar;
+    private javax.swing.JButton ButtonSiguiente;
+    private javax.swing.JComboBox Combobox1;
+    private javax.swing.JTextField Edit;
+    private javax.swing.JToggleButton ToggleAMFM;
+    private javax.swing.JToggleButton ToggleOnOff;
     // End of variables declaration//GEN-END:variables
 }
