@@ -37,6 +37,7 @@ public interface radio {
     /**
         Metodo de guardar emisora en un boton
         @param btn, contiene el ID del boton
+     * @param emisora
      */
 
     void saveEmisora(int btn, double emisora);
@@ -44,12 +45,14 @@ public interface radio {
     /**
         Metodo de seleccionar emisora
         @param btn, contiene el ID del boton
+     * @return 
      */
 
     double selectEmisora(int btn);
 
     /**
         Metodo para obtener el estado actual de la radio
+     * @return 
         @ return Estado de la radio
         True -> Encendido
         False -> Apagado

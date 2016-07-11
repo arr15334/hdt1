@@ -14,6 +14,9 @@ public class usoRadio implements radio {
     private double[] emisorasAM = new double[12];
     private double[] emisorasFM = new double[12];
 
+    /**
+     *
+     */
     public usoRadio() {
         setFrecuencia(true);
         setEncendido(true);

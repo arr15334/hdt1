@@ -3,9 +3,19 @@
 Autores: Rodrigo Arriaza, Sebastian Galindo, Alejandro Chaclan
 */
 
+/**
+ *
+ * @author arriaza96
+ */
+
+
 public class RadioUI extends javax.swing.JFrame {
     radio laradio;
     int i;
+
+    /**
+     *
+     */
     public RadioUI() {
         initComponents();
     }
