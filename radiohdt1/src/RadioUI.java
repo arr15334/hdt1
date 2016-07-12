@@ -13,14 +13,10 @@ public class RadioUI extends javax.swing.JFrame {
     radio laradio;
     int i;
 
-    /**
-     *
-     */
+    
     public RadioUI() {
         initComponents();
     }
-
-
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -267,7 +263,6 @@ public class RadioUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
 
     private void EditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EditActionPerformed
 
