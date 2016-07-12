@@ -274,6 +274,7 @@ public class RadioUI extends javax.swing.JFrame {
     }//GEN-LAST:event_EditActionPerformed
 
     private void ButtonSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonSiguienteActionPerformed
+        // se revisa si la radio esta en AM o FM y depende de eso se muestra la emisora y cambia para arriba
         if (radio.getFrecuencia()) {
             radio.setEmisora(100 *(radio.getEmisora() + 0.2) / 100);
             Edit.setText(Double.toString(radio.getEmisora()));
@@ -284,6 +285,7 @@ public class RadioUI extends javax.swing.JFrame {
     }//GEN-LAST:event_ButtonSiguienteActionPerformed
 
     private void ButtonAnteriorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonAnteriorActionPerformed
+        // se revisa si la radio esta en AM o FM y depende de eso se muestra la emisora y cambia para abajo
         if (radio.getFrecuencia()) {
             radio.setEmisora(100 * (radio.getEmisora() - 0.2) / 100);
             Edit.setText(Double.toString(radio.getEmisora()));
@@ -339,6 +341,7 @@ public class RadioUI extends javax.swing.JFrame {
     }//GEN-LAST:event_Button12ActionPerformed
 
     private void ToggleAMFMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ToggleAMFMActionPerformed
+        // aqui se especifica el funcionamiento del boton AM/FM
         if (radio.getFrecuencia()) {
             ToggleAMFM.setText("AM");
             radio.setFrecuencia(false);
@@ -373,6 +376,7 @@ public class RadioUI extends javax.swing.JFrame {
     }//GEN-LAST:event_Button4ActionPerformed
 
     private void ToggleOnOffActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ToggleOnOffActionPerformed
+       //cuando se apague se deshabilitan los demas botones
         if (radio.getEncendido()) {
             Button1.setEnabled(false);
             Button2.setEnabled(false);

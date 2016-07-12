@@ -15,7 +15,7 @@ public class usoRadio implements radio {
     private double[] emisorasFM = new double[12];
 
     /**
-     *
+     * se declaran los valores iniciales para la radio al momento de que sea instanciada
      */
     public usoRadio() {
         setFrecuencia(true);
