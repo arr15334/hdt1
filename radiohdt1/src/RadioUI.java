@@ -10,9 +10,6 @@ Autores: Rodrigo Arriaza, Sebastian Galindo, Alejandro Chaclan
 
 
 public class RadioUI extends javax.swing.JFrame {
-    radio laradio;
-    int i;
-
 
     public RadioUI() {
         initComponents();
@@ -263,7 +260,12 @@ public class RadioUI extends javax.swing.JFrame {
 
         pack();
 
+        radio.setFrecuencia(false);
+        for (int i = 0; i < 12; i++)
+           radio.saveEmisora(i,530);
         radio.setFrecuencia(true);
+        for (int i = 0; i < 12; i++)
+           radio.saveEmisora(i,87.9);
         radio.setEncendido(true);
         radio.setEmisora(87.9);
     }// </editor-fold>//GEN-END:initComponents
@@ -462,7 +464,7 @@ public class RadioUI extends javax.swing.JFrame {
         });
     }
 
-    private usoRadio radio = new usoRadio();
+    private radio radio = new usoRadio();
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Button1;
     private javax.swing.JButton Button10;
