@@ -13,7 +13,7 @@ public class RadioUI extends javax.swing.JFrame {
     radio laradio;
     int i;
 
-    
+
     public RadioUI() {
         initComponents();
     }
@@ -262,6 +262,10 @@ public class RadioUI extends javax.swing.JFrame {
         );
 
         pack();
+
+        radio.setFrecuencia(true);
+        radio.setEncendido(true);
+        radio.setEmisora(87.9);
     }// </editor-fold>//GEN-END:initComponents
 
     private void EditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EditActionPerformed
@@ -271,10 +275,14 @@ public class RadioUI extends javax.swing.JFrame {
     private void ButtonSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonSiguienteActionPerformed
         // se revisa si la radio esta en AM o FM y depende de eso se muestra la emisora y cambia para arriba
         if (radio.getFrecuencia()) {
-            radio.setEmisora(100 *(radio.getEmisora() + 0.2) / 100);
+            if (Double.compare(radio.getEmisora(), 107.9) == 0)
+                radio.setEmisora(87.9); else
+                radio.setEmisora(100 *(radio.getEmisora() + 0.2) / 100);
             Edit.setText(Double.toString(radio.getEmisora()));
         } else {
-            radio.setEmisora(radio.getEmisora() + 10);
+            if (Double.compare(radio.getEmisora(), 1610) == 0)
+                radio.setEmisora(530); else
+                radio.setEmisora(radio.getEmisora() + 10);
             Edit.setText(Double.toString(radio.getEmisora()));
         }
     }//GEN-LAST:event_ButtonSiguienteActionPerformed
@@ -282,57 +290,61 @@ public class RadioUI extends javax.swing.JFrame {
     private void ButtonAnteriorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonAnteriorActionPerformed
         // se revisa si la radio esta en AM o FM y depende de eso se muestra la emisora y cambia para abajo
         if (radio.getFrecuencia()) {
-            radio.setEmisora(100 * (radio.getEmisora() - 0.2) / 100);
+            if (Double.compare(radio.getEmisora(), 87.9) == 0)
+                radio.setEmisora(107.9); else
+                radio.setEmisora(100 * (radio.getEmisora() - 0.2) / 100);
             Edit.setText(Double.toString(radio.getEmisora()));
         } else {
-            radio.setEmisora(radio.getEmisora() - 10);
+            if (Double.compare(radio.getEmisora(), 530) == 0)
+                radio.setEmisora(1610); else
+                radio.setEmisora(radio.getEmisora() - 10);
             Edit.setText(Double.toString(radio.getEmisora()));
         }
     }//GEN-LAST:event_ButtonAnteriorActionPerformed
 
     private void Button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button1ActionPerformed
-        Edit.setText(Double.toString(radio.selectEmisora(1)));
-        radio.setEmisora(radio.selectEmisora(1));
+        Edit.setText(Double.toString(radio.selectEmisora(0)));
+        radio.setEmisora(radio.selectEmisora(0));
     }//GEN-LAST:event_Button1ActionPerformed
 
     private void Button5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button5ActionPerformed
-        Edit.setText(Double.toString(radio.selectEmisora(5)));
-        radio.setEmisora(radio.selectEmisora(5));
+        Edit.setText(Double.toString(radio.selectEmisora(4)));
+        radio.setEmisora(radio.selectEmisora(4));
     }//GEN-LAST:event_Button5ActionPerformed
 
     private void Button6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button6ActionPerformed
-        Edit.setText(Double.toString(radio.selectEmisora(6)));
-        radio.setEmisora(radio.selectEmisora(6));
+        Edit.setText(Double.toString(radio.selectEmisora(5)));
+        radio.setEmisora(radio.selectEmisora(5));
     }//GEN-LAST:event_Button6ActionPerformed
 
     private void Button7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button7ActionPerformed
-        Edit.setText(Double.toString(radio.selectEmisora(7)));
-        radio.setEmisora(radio.selectEmisora(7));
+        Edit.setText(Double.toString(radio.selectEmisora(6)));
+        radio.setEmisora(radio.selectEmisora(6));
     }//GEN-LAST:event_Button7ActionPerformed
 
     private void Button8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button8ActionPerformed
-        Edit.setText(Double.toString(radio.selectEmisora(8)));
-        radio.setEmisora(radio.selectEmisora(8));
+        Edit.setText(Double.toString(radio.selectEmisora(7)));
+        radio.setEmisora(radio.selectEmisora(7));
     }//GEN-LAST:event_Button8ActionPerformed
 
     private void Button9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button9ActionPerformed
-        Edit.setText(Double.toString(radio.selectEmisora(9)));
-        radio.setEmisora(radio.selectEmisora(9));
+        Edit.setText(Double.toString(radio.selectEmisora(8)));
+        radio.setEmisora(radio.selectEmisora(8));
     }//GEN-LAST:event_Button9ActionPerformed
 
     private void Button10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button10ActionPerformed
-        Edit.setText(Double.toString(radio.selectEmisora(10)));
-        radio.setEmisora(radio.selectEmisora(10));
+        Edit.setText(Double.toString(radio.selectEmisora(9)));
+        radio.setEmisora(radio.selectEmisora(9));
     }//GEN-LAST:event_Button10ActionPerformed
 
     private void Button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button11ActionPerformed
-        Edit.setText(Double.toString(radio.selectEmisora(11)));
-        radio.setEmisora(radio.selectEmisora(11));
+        Edit.setText(Double.toString(radio.selectEmisora(10)));
+        radio.setEmisora(radio.selectEmisora(10));
     }//GEN-LAST:event_Button11ActionPerformed
 
     private void Button12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button12ActionPerformed
-        Edit.setText(Double.toString(radio.selectEmisora(12)));
-        radio.setEmisora(radio.selectEmisora(12));
+        Edit.setText(Double.toString(radio.selectEmisora(11)));
+        radio.setEmisora(radio.selectEmisora(11));
     }//GEN-LAST:event_Button12ActionPerformed
 
     private void ToggleAMFMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ToggleAMFMActionPerformed
@@ -356,18 +368,18 @@ public class RadioUI extends javax.swing.JFrame {
     }//GEN-LAST:event_ButtonGuardarActionPerformed
 
     private void Button2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button2ActionPerformed
-        Edit.setText(Double.toString(radio.selectEmisora(2)));
-        radio.setEmisora(radio.selectEmisora(2));
+        Edit.setText(Double.toString(radio.selectEmisora(1)));
+        radio.setEmisora(radio.selectEmisora(1));
     }//GEN-LAST:event_Button2ActionPerformed
 
     private void Button3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button3ActionPerformed
-        Edit.setText(Double.toString(radio.selectEmisora(3)));
-        radio.setEmisora(radio.selectEmisora(3));
+        Edit.setText(Double.toString(radio.selectEmisora(2)));
+        radio.setEmisora(radio.selectEmisora(2));
     }//GEN-LAST:event_Button3ActionPerformed
 
     private void Button4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button4ActionPerformed
-        Edit.setText(Double.toString(radio.selectEmisora(4)));
-        radio.setEmisora(radio.selectEmisora(4));
+        Edit.setText(Double.toString(radio.selectEmisora(3)));
+        radio.setEmisora(radio.selectEmisora(3));
     }//GEN-LAST:event_Button4ActionPerformed
 
     private void ToggleOnOffActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ToggleOnOffActionPerformed

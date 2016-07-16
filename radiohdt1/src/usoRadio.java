@@ -18,9 +18,6 @@ public class usoRadio implements radio {
      * se declaran los valores iniciales para la radio al momento de que sea instanciada
      */
     public usoRadio() {
-        setFrecuencia(true);
-        setEncendido(true);
-        setEmisora(87.9);
         for (int i = 0; i < 12; i++) {
             emisorasFM[i] = 87.9;
             emisorasAM[i] = 530;
@@ -40,21 +37,6 @@ public class usoRadio implements radio {
 
     @Override
     public void setEmisora(double emisora) {
-        if (getFrecuencia()) {
-            if (Double.compare(emisora, 108.1) == 0) {
-                emisora = 87.9;
-            }
-            if (Double.compare(emisora, 87.7) == 0) {
-                emisora = 107.9;
-            }
-        } else {
-            if (Double.compare(emisora, 1620) == 0) {
-                emisora = 530;
-            }
-            if (Double.compare(emisora, 520) == 0) {
-                emisora = 1610;
-            }
-        }
         this.emisora = emisora;
     }
 
@@ -70,9 +52,9 @@ public class usoRadio implements radio {
     @Override
     public double selectEmisora(int btn) {
         if (getFrecuencia()) {
-            return emisorasFM[btn-1];
+            return emisorasFM[btn];
         } else {
-            return emisorasAM[btn-1];
+            return emisorasAM[btn];
         }
     }
 
